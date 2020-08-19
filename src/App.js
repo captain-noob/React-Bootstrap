@@ -149,26 +149,26 @@ function App() {
 }
 
 export default App;
-export const main1="#2c3e50";
-export const main2="#ff9900";
+export const main1blue="#2c3e50";
+export const main2orange="#ff9900";
 
 const login = {
-  color: main2,
+  color: main2orange,
   backgroundColor: "white",
-  borderColor: main2
+  borderColor: main2orange
 };
 const signup = {
-  backgroundColor: main2,
+  backgroundColor: main2orange,
   color:"white"
 };
 const input = {
   color: "black",
   backgroundColor: "white",
-  borderColor: main2
+  borderColor: main2orange
 };
 
 const mainbutton = {
   color: "white",
-  backgroundColor: main1,
-  borderColor: main1
+  backgroundColor: main1blue,
+  borderColor: main1blue
 };
