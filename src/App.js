@@ -38,11 +38,11 @@ function App() {
                 <Form.Group>
                   <InputGroup className=" input-group-sm mb-3">
                     <InputGroup.Prepend>
-                      <InputGroup.Text style={login} className="font-weight-bold ">Zip Code</InputGroup.Text>
+                      <InputGroup.Text style={signup} className="font-weight-bold ">Zip Code</InputGroup.Text>
                     </InputGroup.Prepend>
                     <FormControl style={input} type="text" className="form-control" name="cid" placeholder />
                     <InputGroup.Append className="input-group-append">
-                      <Button type="submit" style={login} variant="outline-warning"  className=" bg-light  text-warning"><i className="fa fa-search" /></Button>
+                      <Button type="submit" style={signup} variant="outline-warning"  className=""><i className="fa fa-search" /></Button>
                     </InputGroup.Append>
                   </InputGroup>
                 </Form.Group>
@@ -159,6 +159,7 @@ const login = {
 };
 const signup = {
   backgroundColor: main2,
+  color:"white"
 };
 const input = {
   color: "black",
