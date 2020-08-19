@@ -4,6 +4,7 @@ import './App.css';
 import { Button, Nav ,Form ,InputGroup ,FormControl,Navbar,Image, FormGroup, Container, Row ,Col, } from 'react-bootstrap';
 
 
+
 function App() {
   return (
     <div className="main">
@@ -37,24 +38,23 @@ function App() {
                 <Form.Group>
                   <InputGroup className=" input-group-sm mb-3">
                     <InputGroup.Prepend>
-                      <InputGroup.Text className="font-weight-bold bg-success text-white">Zip Code</InputGroup.Text>
+                      <InputGroup.Text style={login} className="font-weight-bold ">Zip Code</InputGroup.Text>
                     </InputGroup.Prepend>
-                    <FormControl type="text" className="form-control" name="cid" placeholder />
+                    <FormControl style={input} type="text" className="form-control" name="cid" placeholder />
                     <InputGroup.Append className="input-group-append">
-                      <Button type="submit" variant="outline-warning"  className=" bg-light  text-warning"><i className="fa fa-search" /></Button>
+                      <Button type="submit" style={login} variant="outline-warning"  className=" bg-light  text-warning"><i className="fa fa-search" /></Button>
                     </InputGroup.Append>
                   </InputGroup>
                 </Form.Group>
               </Nav.Item>
               <Nav.Item>
-                <a className="js-scroll" href="#"><Button variant="outline-warning" size="sm" className="mb-2  col-sm-12 col-md-12">Login</Button></a>
+                <a className="js-scroll" href="#"><Button style={login} variant="outline-warning" size="sm" className="mb-2  col-sm-12 col-md-12">Login</Button></a>
               </Nav.Item>
               <Nav.Item>
-                <a className="js-scroll" href="#"><Button variant="warning" size="sm" className="mb-2  col-sm-12 col-md-12">SignUp</Button></a>
+                <a className="js-scroll" href="#"><Button style={signup} variant="warning" size="sm" className="mb-2  col-sm-12 col-md-12">SignUp</Button></a>
               </Nav.Item>
               <Nav.Item>
-                <a className="js-scroll" href="#"><Button variant="light" size="sm" className="mb-2 text-secondary col-sm-12 col-md-12"><span><i className="fa fa-shopping-cart" />
-                      Cart</span></Button></a>
+                <a className="js-scroll" href="#"><Button variant="light" size="sm" className="mb-2 text-secondary col-sm-12 col-md-12"><span><i className="fa fa-shopping-cart" /> Cart</span></Button></a>
               </Nav.Item>
             </Nav>
           </Navbar.Collapse>
@@ -81,8 +81,8 @@ function App() {
                     <Col md={8} className="input-form">
                       <input type="text" placeholder="Enter Your Email" />
                     </Col>
-                    <Col md={4} className="search-form">
-                      <a href="#"><i className /> Subscribe</a>
+                    <Col md={4} style={mainbutton} className="search-form ">
+                      <Nav.Link href="#"><i className /> Subscribe</Nav.Link>
                     </Col>
                   </Form>
                 </Col>
@@ -149,3 +149,25 @@ function App() {
 }
 
 export default App;
+export const main1="#2c3e50";
+export const main2="#ff9900";
+
+const login = {
+  color: main2,
+  backgroundColor: "white",
+  borderColor: main2
+};
+const signup = {
+  backgroundColor: main2,
+};
+const input = {
+  color: "black",
+  backgroundColor: "white",
+  borderColor: main2
+};
+
+const mainbutton = {
+  color: "white",
+  backgroundColor: main1,
+  borderColor: main1
+};
