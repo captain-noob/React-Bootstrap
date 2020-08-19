@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { Button, Nav ,Form ,InputGroup ,FormControl,Navbar,Image, FormGroup, Container, Row ,Col,NavDropdown } from 'react-bootstrap';
+import { Button, Nav ,Form ,InputGroup ,FormControl,Navbar,Image, FormGroup, Container, Row ,Col,Dropdown,NavDropdown } from 'react-bootstrap';
 
 
 
@@ -35,27 +35,29 @@ function App() {
               </Nav.Item>
               <Nav.Item>
                 {/* <Form.Group className="form-group"> */}
-                <Form.Group>
+                <Nav.Item>
                   <InputGroup className=" input-group-sm mb-3">
-                    <InputGroup.Prepend>
+                    <InputGroup.Prepend >
                       <InputGroup.Text style={inplabel} className="font-weight-bold ">Zip Code</InputGroup.Text>
-                      {/* <InputGroup.Text style={inplabel1} className="font-weight-bold ">Zip Code</InputGroup.Text> */}
-
-                      {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                        <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                        <NavDropdown.Divider />
-                        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                      </NavDropdown> */}
+                      {/* edit this  */}
+                      <Dropdown size="sm" title="aa">
+                        <Dropdown.Toggle size="sm" style={inplabel1} className="text-secondary" id="dropdown-basic">111</Dropdown.Toggle>
+                         <Dropdown.Menu >
+                          <FormControl style={input} type="text" className="form-control" name="cid" placeholder="Enter Zip Code" />
+                          <Dropdown.Item  size="sm" href="#/action-1">111</Dropdown.Item>
+                          <Dropdown.Item  size="sm" href="#/action-2">111</Dropdown.Item>
+                        </Dropdown.Menu>
+                      </Dropdown>
+                      {/* end edit this */}
 
                     </InputGroup.Prepend>
+
                     <FormControl style={input} type="text" className="form-control" name="cid" placeholder />
                     <InputGroup.Append className="input-group-append">
                       <Button type="submit" style={signup} variant="outline-warning"  className=""><i className="fa fa-search" /></Button>
                     </InputGroup.Append>
                   </InputGroup>
-                </Form.Group>
+                </Nav.Item>
               </Nav.Item>
                 <Row>
                   <a className="js-scroll" href="#"><Button style={login,border} variant="outline-warning" size="sm" className="mb-2 ml-4 ">Login</Button></a>
