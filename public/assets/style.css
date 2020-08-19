@@ -584,3 +584,7 @@ a {
     margin-top: 20px;
   }
 }
+
+.curved-corner{
+  border-radius: 15px !important;
+}

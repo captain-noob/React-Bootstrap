@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { Button, Nav ,Form ,InputGroup ,FormControl,Navbar,Image, FormGroup, Container, Row ,Col, } from 'react-bootstrap';
+import { Button, Nav ,Form ,InputGroup ,FormControl,Navbar,Image, FormGroup, Container, Row ,Col,NavDropdown } from 'react-bootstrap';
 
 
 
@@ -38,7 +38,17 @@ function App() {
                 <Form.Group>
                   <InputGroup className=" input-group-sm mb-3">
                     <InputGroup.Prepend>
-                      <InputGroup.Text style={signup} className="font-weight-bold ">Zip Code</InputGroup.Text>
+                      <InputGroup.Text style={inplabel} className="font-weight-bold ">Zip Code</InputGroup.Text>
+                      {/* <InputGroup.Text style={inplabel1} className="font-weight-bold ">Zip Code</InputGroup.Text> */}
+
+                      {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+                        <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                        <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
+                        <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                        <NavDropdown.Divider />
+                        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                      </NavDropdown> */}
+
                     </InputGroup.Prepend>
                     <FormControl style={input} type="text" className="form-control" name="cid" placeholder />
                     <InputGroup.Append className="input-group-append">
@@ -47,15 +57,11 @@ function App() {
                   </InputGroup>
                 </Form.Group>
               </Nav.Item>
-              <Nav.Item>
-                <a className="js-scroll" href="#"><Button style={login} variant="outline-warning" size="sm" className="mb-2  col-sm-12 col-md-12">Login</Button></a>
-              </Nav.Item>
-              <Nav.Item>
-                <a className="js-scroll" href="#"><Button style={signup} variant="warning" size="sm" className="mb-2  col-sm-12 col-md-12">SignUp</Button></a>
-              </Nav.Item>
-              <Nav.Item>
-                <a className="js-scroll" href="#"><Button variant="light" size="sm" className="mb-2 text-secondary col-sm-12 col-md-12"><span><i className="fa fa-shopping-cart" /> Cart</span></Button></a>
-              </Nav.Item>
+                <Row>
+                  <a className="js-scroll" href="#"><Button style={login,border} variant="outline-warning" size="sm" className="mb-2 ml-4 ">Login</Button></a>
+                  <a className="js-scroll" href="#"><Button style={signup,border} variant="warning" size="sm" className="mb-2 ml-4">SignUp</Button></a>
+                  <a className="js-scroll" href="#"><Button variant="light" size="sm" className="mb-2 ml-4 text-secondary "><span><i className="fa fa-shopping-cart" /> Cart</span></Button></a>
+                </Row>
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -151,11 +157,35 @@ function App() {
 export default App;
 export const main1blue="#2c3e50";
 export const main2orange="#ff9900";
+const number=15;
 
 const login = {
   color: main2orange,
   backgroundColor: "white",
-  borderColor: main2orange
+  borderColor: main2orange,
+  
+};
+
+const inplabel={
+  borderBottomColor: main2orange,
+  borderLeftColor: main2orange,
+  borderTopColor: main2orange,
+  borderRightColor: "white",
+  backgroundColor:"white"
+};
+const inplabel1={
+  borderBottomColor: main2orange,
+  borderLeftColor: "white",
+  borderTopColor: main2orange,
+  borderRightColor: main2orange,
+  backgroundColor:"white"
+};
+
+const border ={
+  borderBottomLeftRadius: number,
+  borderBottomRightRadius: number,
+  borderTopLeftRadius: number,
+  borderTopRightRadius: number,
 };
 const signup = {
   backgroundColor: main2orange,
