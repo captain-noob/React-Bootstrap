@@ -10,13 +10,13 @@ function App() {
     <div className="main">
       <Navbar expand="md" fixed="top" className=" navbar-b navbar-trans  border" id="mainNav">
         <Container fluid>
-          <Navbar.Brand className="js-scroll" href="#page-top"><i className="fa fa-bug text-danger" /> ShopFolio</Navbar.Brand>
+          <Navbar.Brand className="js-scroll mt-0" href="#page-top"><i className="fa fa-bug text-danger" /> ShopFolio</Navbar.Brand>
           <Navbar.Toggle  className="collapsed bg-transparent btn-outline-light" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span />
             <span />
             <span />
           </Navbar.Toggle>
-          <Navbar.Collapse className=" collapse justify-content-end" id="navbarDefault">
+          <Navbar.Collapse className="mt-1" id="navbarDefault">
             <Nav className="navbar-nav">
               <Nav.Item>
                 <Nav.Link className=" js-scroll active" href="index.html"> Home</Nav.Link>
@@ -30,36 +30,33 @@ function App() {
               <Nav.Item>
                 <Nav.Link className=" js-scroll" href="#work">Vacancies</Nav.Link>
               </Nav.Item>
-              <Nav.Item>
+              <Nav.Item className="">
                 <Nav.Link className=" js-scroll" href="#blog">Pricing Plan</Nav.Link>
               </Nav.Item>
-              <Nav.Item>
-                {/* <Form.Group className="form-group"> */}
-                <Nav.Item>
-                  <InputGroup className=" input-group-sm mb-3">
+              <Row className="ml-5 pl-4"></Row>
+              <Nav.Item className="">
+                  <InputGroup className=" input-group-sm">
                     <InputGroup.Prepend >
                       <InputGroup.Text style={inplabel} className="font-weight-bold ">Zip Code</InputGroup.Text>
-                      
                       <select style={inplabel1} name="zip" id="zip">
                         <option style={inplabel1}  value="100" selected>1233</option>
                         <option value="101">1232</option>
                         <option value="102">1236</option>
                       </select>
-
                     </InputGroup.Prepend>
-
                     <FormControl style={input} type="text" className="form-control" name="cid" placeholder />
                     <InputGroup.Append className="input-group-append">
                       <Button type="submit" style={signup} variant="outline-warning"  className=""><i className="fa fa-search" /></Button>
                     </InputGroup.Append>
                   </InputGroup>
                 </Nav.Item>
-              </Nav.Item>
-                <Row>
-                  <a className="js-scroll" href="#"><Button style={login,border} variant="outline-warning" size="sm" className="mb-2 ml-4 ">Login</Button></a>
-                  <a className="js-scroll" href="#"><Button style={signup,border} variant="warning" size="sm" className="mb-2 ml-4">SignUp</Button></a>
-                  <a className="js-scroll" href="#"><Button variant="light" size="sm" className="mb-2 ml-4 text-secondary "><span><i className="fa fa-shopping-cart" /> Cart</span></Button></a>
-                </Row>
+                <Nav.Item>
+                  <Row>
+                    <a className="js-scroll" href="#"><Button style={login,border} variant="outline-warning" size="sm" className="mb-2 ml-4 ">Login</Button></a>
+                    <a className="js-scroll" href="#"><Button style={signup,border} variant="warning" size="sm" className="mb-2 ml-4">SignUp</Button></a>
+                    <a className="js-scroll" href="#"><Button variant="light" size="sm" className="mb-2 ml-4 text-secondary "><span><i className="fa fa-shopping-cart" /> Cart</span></Button></a>
+                  </Row>
+                </Nav.Item>
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -101,36 +98,36 @@ function App() {
           <Row>
             <Col lg={3} sm={4} className="mb-4 mb-xl-0 single-footer-widget">
               <ul>
-                <li><Nav.Link href="#"><b>COMPANY</b></Nav.Link></li>
-                <li><Nav.Link href="#">About Us</Nav.Link></li>
+                <li><a href="#"><b>COMPANY</b></a></li>
+                <li><a href="#">About Us</a></li>
               </ul>
             </Col>
             <Col lg={3} sm={4} className=" mb-4 mb-xl-0 single-footer-widget">
               <ul>
-                <li><Nav.Link href="#"><b>CONTACT</b></Nav.Link></li>
-                <li><Nav.Link href="#">Help &amp; support</Nav.Link></li>
-                <li><Nav.Link href="#">Partner with Us</Nav.Link></li>
+                <li><a href="#"><b>CONTACT</b></a></li>
+                <li><a href="#">Help &amp; support</a></li>
+                <li><a href="#">Partner with Us</a></li>
               </ul>
             </Col>
             <Col lg={3} sm={4} className="mb-4 mb-xl-0 single-footer-widget">
               <ul>
-                <li><Nav.Link href="#"><b>LEGAL</b></Nav.Link></li>
-                <li><Nav.Link href="#">Terms &amp; Conditions</Nav.Link></li>
-                <li><Nav.Link href="#">Refunds &amp; Cancellation</Nav.Link></li>
-                <li><Nav.Link href="#">Privacy Policy</Nav.Link></li>
-                <li><Nav.Link href="#">Cookie policy</Nav.Link></li>
+                <li><a href="#"><b>LEGAL</b></a></li>
+                <li><a href="#">Terms &amp; Conditions</a></li>
+                <li><a href="#">Refunds &amp; Cancellation</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Cookie policy</a></li>
               </ul>
             </Col>
             <Col lg={3} sm={8} md={8} className=" mb-4 mb-xl-0 single-footer-widget">
               <ul>
                 <li>
                   <a href="#">
-                    <Image src="assets/img/app.svg" alt="" />
+                    <Image src="assets/img/app.svg" style={{width:150}} alt="" />
                   </a>
                 </li>
                 <br />
                 <li><a href="#">
-                    <Image  src="assets/img/play.svg" alt="" />
+                    <Image  src="assets/img/play.svg" style={{width:150}} alt="" />
                   </a>
                 </li>
               </ul>
