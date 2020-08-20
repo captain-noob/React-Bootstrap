@@ -39,16 +39,12 @@ function App() {
                   <InputGroup className=" input-group-sm mb-3">
                     <InputGroup.Prepend >
                       <InputGroup.Text style={inplabel} className="font-weight-bold ">Zip Code</InputGroup.Text>
-                      {/* edit this  */}
                       <Dropdown size="sm" title="aa">
                         <Dropdown.Toggle size="sm" style={inplabel1} className="text-secondary" id="dropdown-basic">111</Dropdown.Toggle>
-                         <Dropdown.Menu >
-                          <FormControl style={input} type="text" className="form-control" name="cid" placeholder="Enter Zip Code" />
-                          <Dropdown.Item  size="sm" href="#/action-1">111</Dropdown.Item>
-                          <Dropdown.Item  size="sm" href="#/action-2">111</Dropdown.Item>
-                        </Dropdown.Menu>
+                         {/* <Dropdown.Menu >
+                             DropDown Item
+                        </Dropdown.Menu> */}
                       </Dropdown>
-                      {/* end edit this */}
 
                     </InputGroup.Prepend>
 
