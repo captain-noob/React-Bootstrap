@@ -39,12 +39,12 @@ function App() {
                   <InputGroup className=" input-group-sm mb-3">
                     <InputGroup.Prepend >
                       <InputGroup.Text style={inplabel} className="font-weight-bold ">Zip Code</InputGroup.Text>
-                      <Dropdown size="sm" title="aa">
-                        <Dropdown.Toggle size="sm" style={inplabel1} className="text-secondary" id="dropdown-basic">111</Dropdown.Toggle>
-                         {/* <Dropdown.Menu >
-                             DropDown Item
-                        </Dropdown.Menu> */}
-                      </Dropdown>
+                      
+                      <select style={inplabel1} name="zip" id="zip">
+                        <option style={inplabel1}  value="100" selected>1233</option>
+                        <option value="101">1232</option>
+                        <option value="102">1236</option>
+                      </select>
 
                     </InputGroup.Prepend>
 
