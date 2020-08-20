@@ -10,13 +10,13 @@ function App() {
     <div className="main">
       <Navbar expand="md" fixed="top" className=" navbar-b navbar-trans  border" id="mainNav">
         <Container fluid>
-          <Navbar.Brand className="js-scroll mt-0" href="#page-top"><i className="fa fa-bug text-danger" /> ShopFolio</Navbar.Brand>
+          <Navbar.Brand className="js-scroll pt-3" href="#page-top"><i className="fa fa-bug text-danger" /> ShopFolio</Navbar.Brand>
           <Navbar.Toggle  className="collapsed bg-transparent btn-outline-light" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span />
             <span />
             <span />
           </Navbar.Toggle>
-          <Navbar.Collapse className="mt-1" id="navbarDefault">
+          <Navbar.Collapse className="pt-2" id="navbarDefault">
             <Nav className="navbar-nav">
               <Nav.Item>
                 <Nav.Link className=" js-scroll active" href="index.html"> Home</Nav.Link>
@@ -30,33 +30,36 @@ function App() {
               <Nav.Item>
                 <Nav.Link className=" js-scroll" href="#work">Vacancies</Nav.Link>
               </Nav.Item>
-              <Nav.Item className="">
+              <Nav.Item className="pr-5 mr-4">
                 <Nav.Link className=" js-scroll" href="#blog">Pricing Plan</Nav.Link>
               </Nav.Item>
-              <Row className="ml-5 pl-4"></Row>
-              <Nav.Item className="">
-                  <InputGroup className=" input-group-sm">
+              <Nav.Item>
+                {/* <Form.Group className="form-group"> */}
+                <Nav.Item>
+                  <InputGroup className=" input-group-sm mb-3">
                     <InputGroup.Prepend >
                       <InputGroup.Text style={inplabel} className="font-weight-bold ">Zip Code</InputGroup.Text>
+                      
                       <select style={inplabel1} name="zip" id="zip">
                         <option style={inplabel1}  value="100" selected>1233</option>
                         <option value="101">1232</option>
                         <option value="102">1236</option>
                       </select>
+
                     </InputGroup.Prepend>
+
                     <FormControl style={input} type="text" className="form-control" name="cid" placeholder />
                     <InputGroup.Append className="input-group-append">
                       <Button type="submit" style={signup} variant="outline-warning"  className=""><i className="fa fa-search" /></Button>
                     </InputGroup.Append>
                   </InputGroup>
                 </Nav.Item>
-                <Nav.Item>
-                  <Row>
-                    <a className="js-scroll" href="#"><Button style={login,border} variant="outline-warning" size="sm" className="mb-2 ml-4 ">Login</Button></a>
-                    <a className="js-scroll" href="#"><Button style={signup,border} variant="warning" size="sm" className="mb-2 ml-4">SignUp</Button></a>
-                    <a className="js-scroll" href="#"><Button variant="light" size="sm" className="mb-2 ml-4 text-secondary "><span><i className="fa fa-shopping-cart" /> Cart</span></Button></a>
-                  </Row>
-                </Nav.Item>
+              </Nav.Item>
+                <Row>
+                  <a className="js-scroll" href="#"><Button style={login,border} variant="outline-warning" size="sm" className="mb-2 ml-4 ">Login</Button></a>
+                  <a className="js-scroll" href="#"><Button style={signup,border} variant="warning" size="sm" className="mb-2 ml-4">SignUp</Button></a>
+                  <a className="js-scroll" href="#"><Button variant="light" size="sm" className="mb-2 ml-4 text-secondary "><span><i className="fa fa-shopping-cart" /> Cart</span></Button></a>
+                </Row>
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -122,7 +125,7 @@ function App() {
               <ul>
                 <li>
                   <a href="#">
-                    <Image src="assets/img/app.svg" style={{width:150}} alt="" />
+                    <Image src="assets/img/app.svg" alt="" style={{width:150}} />
                   </a>
                 </li>
                 <br />
@@ -135,8 +138,9 @@ function App() {
           </Row>
         </Container>
       </section>
-      <footer className="copyright_part bg-dark text-white p-4">
+      <footer style={{backgroundColor:"black"}} className="copyright_part  text-white p-4">
         <Container>
+          <hr color="white"/>
           <Row className=" align-items-center">
             <Col lg={12} md={12} className="footer-text m-0  text-center">
               Copyright ©All rights reserved
