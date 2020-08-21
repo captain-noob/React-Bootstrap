@@ -8,7 +8,7 @@ import { Button, Nav ,Form ,InputGroup ,FormControl,Navbar,Image, FormGroup, Con
 function App() {
   return (
     <div className="main">
-      <Navbar expand="md" fixed="top" className=" navbar-b navbar-trans  border" id="mainNav">
+      <Navbar expand="lg" fixed="top" className=" navbar-b navbar-trans  border" id="mainNav">
         <Container fluid>
           <Navbar.Brand className="js-scroll pt-3" href="#page-top"><i className="fa fa-bug text-danger" /> ShopFolio</Navbar.Brand>
           <Navbar.Toggle  className="collapsed bg-transparent btn-outline-light" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -16,8 +16,8 @@ function App() {
             <span />
             <span />
           </Navbar.Toggle>
-          <Navbar.Collapse className="pt-2" id="navbarDefault">
-            <Nav className="navbar-nav">
+          <Navbar.Collapse className="pt-2 justify-content-between" id="navbarDefault">
+            <Nav className="navbar-nav justify-content-start">
               <Nav.Item>
                 <Nav.Link className=" js-scroll active" href="index.html"> Home</Nav.Link>
               </Nav.Item>
@@ -66,7 +66,7 @@ function App() {
       </Navbar>
       {/* ======= Header ======= */}
       <main>
-        <div className="slider-area hero-bg1 hero-overly">
+        <div  className=" fa-expand slider-area hero-bg1 hero-overly">
           <div className="single-slider hero-overly  slider-height1 d-flex align-items-center">
             <Container>
               <Row className="justify-content-center">
@@ -97,22 +97,22 @@ function App() {
       </main>
       {/* footer part start*/}
       <section className="footer-area section_padding">
-        <Container>
+        <Container expand="lg">
           <Row>
-            <Col lg={3} sm={4} className="mb-4 mb-xl-0 single-footer-widget">
+            <Col lg={3} sm={6} md={3} className="mb-4 mb-xl-0 single-footer-widget">
               <ul>
                 <li><a href="#"><b>COMPANY</b></a></li>
                 <li><a href="#">About Us</a></li>
               </ul>
             </Col>
-            <Col lg={3} sm={4} className=" mb-4 mb-xl-0 single-footer-widget">
+            <Col lg={3} sm={6} md={3} className=" mb-4 mb-xl-0 single-footer-widget">
               <ul>
                 <li><a href="#"><b>CONTACT</b></a></li>
                 <li><a href="#">Help &amp; support</a></li>
                 <li><a href="#">Partner with Us</a></li>
               </ul>
             </Col>
-            <Col lg={3} sm={4} className="mb-4 mb-xl-0 single-footer-widget">
+            <Col lg={3} sm={6} md={3} className="mb-4 mb-xl-0 single-footer-widget">
               <ul>
                 <li><a href="#"><b>LEGAL</b></a></li>
                 <li><a href="#">Terms &amp; Conditions</a></li>
@@ -121,7 +121,7 @@ function App() {
                 <li><a href="#">Cookie policy</a></li>
               </ul>
             </Col>
-            <Col lg={3} sm={8} md={8} className=" mb-4 mb-xl-0 single-footer-widget">
+            <Col lg={3} sm={6} md={3} className=" mb-4 mb-xl-0 single-footer-widget">
               <ul>
                 <li>
                   <a href="#">
